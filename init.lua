@@ -1,0 +1,10 @@
+require "user.options"
+require "user.keymaps"
+require "user.plugins-setup"
+require "user.colorschemes"
+-- plugins
+require "user.plugins.cmp"
+require "user.plugins.lualine"
+require "user.plugins.bufferline"
+require "user.plugins.lsp.mason"
+-- require "user.plugins.neo-tree"
