@@ -47,7 +47,7 @@ return packer.startup(function(use)
     use "famiu/bufdelete.nvim"
 
     -- 🎨 Themes
-    -- one Dark
+     -- one Dark
     use 'navarasu/onedark.nvim'
     -- icons dependencies
     use "kyazdani42/nvim-web-devicons"
@@ -87,6 +87,7 @@ return packer.startup(function(use)
     -- treesitter configuration
     use({
         "nvim-treesitter/nvim-treesitter",
+        'norcalli/nvim-colorizer.lua',
         run = function()
             require("nvim-treesitter.install").update({with_sync = true})
         end
@@ -98,6 +99,9 @@ return packer.startup(function(use)
     -- 🔎 fuzzy finding w/ telescope
     use({"nvim-telescope/telescope-fzf-native.nvim", run = "make"}) -- dependency for better sorting performance
     use({"nvim-telescope/telescope.nvim", branch = "0.1.x"}) -- fuzzy finder
+
+    -- 
+    use "lukas-reineke/indent-blankline.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
