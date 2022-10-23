@@ -45,11 +45,13 @@ return packer.startup(function(use)
     use "MunifTanjim/nui.nvim"
     -- Better buffer close
     use "famiu/bufdelete.nvim"
+
+
     -- 🎨 Themes
+    -- one Dark
+    use 'navarasu/onedark.nvim'
     -- icons dependencies
     use "kyazdani42/nvim-web-devicons"
-
-    use 'navarasu/onedark.nvim'
     -- Lua line status bar
     use 'nvim-lualine/lualine.nvim'
     -- Bufferline
@@ -57,8 +59,8 @@ return packer.startup(function(use)
     -- neotree
     use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
 
-    -- 📌 cmp plugins
-    -- The completion plugin
+    -- 📌 cmp 
+    -- completion plugin
     use "hrsh7th/nvim-cmp"
     -- buffer completions
     use "hrsh7th/cmp-buffer"
@@ -68,6 +70,8 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-cmdline"
     -- snippet completions
     use "saadparwaiz1/cmp_luasnip"
+    -- vs-code like icons for autocompletion
+	  use("onsails/lspkind.nvim") 
 
     -- 📌 snippets
     -- snippet engine
@@ -76,7 +80,7 @@ return packer.startup(function(use)
     use "rafamadriz/friendly-snippets"
 
 
-    -- 📌 managing and installing lsp servers
+    -- 📌 LSP
     use ("williamboman/mason.nvim")
     use ("williamboman/mason-lspconfig.nvim")
     use ("neovim/nvim-lspconfig")

@@ -3,6 +3,7 @@ local mason_lspconfig_status, mason_lspconfig =
     pcall(require, "mason-lspconfig")
 
 if mason_status then
+    mason.setup()
     mason_lspconfig.setup({
         ensure_installed = {
             "tsserver", "html", "cssls", "tailwindcss", "sumneko_lua",
