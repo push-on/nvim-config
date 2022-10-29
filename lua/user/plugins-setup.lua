@@ -34,6 +34,7 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
+    use 'lewis6991/impatient.nvim'
 
     -- Have packer manage itself
     use "wbthomason/packer.nvim"
@@ -83,7 +84,6 @@ return packer.startup(function(use)
     use("neovim/nvim-lspconfig") -- easily configure language servers
     use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
     use({"glepnir/lspsaga.nvim", branch = "main"}) -- enhanced lsp uis
-    use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
     -- formatting & linting
     use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
