@@ -28,7 +28,7 @@ if status_ok then
             lualine_b = {},
             lualine_c = {'filename'},
             lualine_x = {'location'},
-            lualine_y = {'progress'},
+            lualine_y = {},
             lualine_z = {}
         }
     }
