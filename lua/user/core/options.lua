@@ -1,8 +1,10 @@
 local options = {
-    laststatus = 0,
+    fillchars = {eob = " "}, -- Disable `~` on nonexistent lines
+    backspace = vim.opt.backspace + {"nostop"}, -- Don't stop backspace at insert
     backup = false, -- creates a backup file
     clipboard = "unnamedplus", -- allows neovim to access the system clipboard
-    cmdheight = 1, -- more space in the neovim command line for displaying messages
+    cmdheight = 0, -- more space in the neovim command line for displaying messages
+    laststatus = 3, -- globalstatus
     completeopt = {"menuone", "noselect"}, -- mostly just for cmp
     conceallevel = 0, -- so that `` is visible in markdown files
     fileencoding = "utf-8", -- the encoding written to a file
@@ -18,7 +20,7 @@ local options = {
     splitright = true, -- force all vertical splits to go to the right of current window
     swapfile = false, -- creates a swapfile
     termguicolors = true, -- set term gui colors (most terminals support this)
-    timeoutlen = 1000, -- time to wait for a mapped sequence to complete (in milliseconds)
+    timeoutlen = 300, -- time to wait for a mapped sequence to complete (in milliseconds)
     undofile = true, -- enable persistent undo
     updatetime = 300, -- faster completion (4000ms default)
     writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
