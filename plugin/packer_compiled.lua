@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ReplaceWithRegister = {
+    loaded = true,
+    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ReplaceWithRegister",
+    url = "https://github.com/vim-scripts/ReplaceWithRegister"
+  },
   ["bufdelete.nvim"] = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufdelete.nvim",
@@ -93,6 +98,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -113,11 +123,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
@@ -174,11 +179,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-colorizer.lua"] = {
-    loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua",
-    url = "https://github.com/norcalli/nvim-colorizer.lua"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
@@ -201,11 +201,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -221,20 +216,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["telescope-fzf-native.nvim"] = {
+  ["tokyonight.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-fzf-native.nvim",
-    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["telescope.nvim"] = {
+  ["vim-surround"] = {
     loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["typescript.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\typescript.nvim",
-    url = "https://github.com/jose-elias-alvarez/typescript.nvim"
+    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 

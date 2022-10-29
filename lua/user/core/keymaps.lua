@@ -21,8 +21,8 @@ keymap("n", "<leader>e", "<cmd>Neotree toggle<cr>", opts)
 keymap("n", "<leader>o", "<cmd>Neotree focus<cr>", opts)
 keymap("n", "<leader>h", "<cmd>nohlsearch<cr>", opts)
 keymap("n", "<leader>n", "<cmd>enew<cr>", opts)
-keymap("n", "<leader>s", "<cmd>w!<cr>", opts)
-keymap("n", "<leader>q", "<cmd>q!<cr>", opts)
+keymap("n", "<C-s>", "<cmd>w!<cr>", opts)
+keymap("n", "<C-q>", "<cmd>q!<cr>", opts)
 
 local status_ok, _ = pcall(require, "bufdelete")
 if status_ok then keymap("n", "<leader>c", "<cmd>Bdelete<cr>", opts) end
