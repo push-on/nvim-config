@@ -1,6 +1,6 @@
 local servers = {
     "tsserver", "html", "cssls", "tailwindcss", "sumneko_lua", "rust_analyzer",
-    "clangd", "emmet_ls", "jsonls", "pyright", "yamlls"
+    "emmet_ls", "jsonls", "pyright", "yamlls"
 }
 
 local settings = {
@@ -35,7 +35,8 @@ for _, server in pairs(servers) do
 
     server = vim.split(server, "@")[1]
 
-    local require_ok, conf_opts = pcall(require, "user.plugins.lsp.settings." .. server)
+    local require_ok, conf_opts = pcall(require,
+                                        "user.plugins.lsp.settings." .. server)
     if require_ok then opts = vim.tbl_deep_extend("force", conf_opts, opts) end
 
     lspconfig[server].setup(opts)

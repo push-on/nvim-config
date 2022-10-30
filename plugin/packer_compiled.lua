@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  ["auto-save.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-save.nvim",
+    url = "https://github.com/Pocco81/auto-save.nvim"
+  },
   ["bufdelete.nvim"] = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufdelete.nvim",
@@ -220,6 +225,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   },
   ["vim-surround"] = {
     loaded = true,

@@ -34,8 +34,8 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
+    -- Speed up neovim
     use 'lewis6991/impatient.nvim'
-
     -- Have packer manage itself
     use "wbthomason/packer.nvim"
     -- An implementation of the Popup API from vim in Neovim
@@ -49,7 +49,10 @@ return packer.startup(function(use)
 
     -- essential plugins
     use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
-    use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
+    -- replace with register contents using motion (gr + motion)
+    use("vim-scripts/ReplaceWithRegister")
+    -- one darker
+    -- use "lunarvim/Onedarker.nvim"
     -- tokyonight
     use 'folke/tokyonight.nvim'
     -- icons dependencies
@@ -60,6 +63,9 @@ return packer.startup(function(use)
     use 'akinsho/bufferline.nvim'
     -- neotree
     use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
+    -- Plug 'nvim-tree/nvim-tree.lua'
+    -- highlight other uses of the word under the cursor
+    use "RRethy/vim-illuminate"
 
     -- autocompletion
     -- completion plugin
@@ -101,6 +107,7 @@ return packer.startup(function(use)
     use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
     use({"windwp/nvim-ts-autotag", after = "nvim-treesitter"}) -- autoclose tags
 
+    use "Pocco81/auto-save.nvim"
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then require("packer").sync() end
