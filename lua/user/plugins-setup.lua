@@ -47,12 +47,6 @@ return packer.startup(function(use)
     -- Better buffer close
     use "famiu/bufdelete.nvim"
 
-    -- essential plugins
-    use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
-    -- replace with register contents using motion (gr + motion)
-    use("vim-scripts/ReplaceWithRegister")
-    -- one darker
-    -- use "lunarvim/Onedarker.nvim"
     -- tokyonight
     use 'folke/tokyonight.nvim'
     -- icons dependencies
@@ -63,11 +57,9 @@ return packer.startup(function(use)
     use 'akinsho/bufferline.nvim'
     -- neotree
     use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
-    -- Plug 'nvim-tree/nvim-tree.lua'
     -- highlight other uses of the word under the cursor
     use "RRethy/vim-illuminate"
 
-    -- autocompletion
     -- completion plugin
     use "hrsh7th/nvim-cmp"
     -- buffer completions
@@ -77,23 +69,27 @@ return packer.startup(function(use)
     -- cmdline completions
     use "hrsh7th/cmp-cmdline"
 
-    -- snippets
-    use("L3MON4D3/LuaSnip") -- snippet engine
-    use("saadparwaiz1/cmp_luasnip") -- for autocompletion
-    use("rafamadriz/friendly-snippets") -- useful snippets
+    -- snippet engine
+    use("L3MON4D3/LuaSnip")
+    -- for autocompletion
+    use("saadparwaiz1/cmp_luasnip")
+    -- useful snippets
+    use("rafamadriz/friendly-snippets")
 
-    -- managing & installing lsp servers, linters & formatters
-    use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
-    use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+    -- in charge of managing lsp servers, linters & formatters
+    use("williamboman/mason.nvim")
+    -- bridges gap b/w mason & lspconfig
+    use("williamboman/mason-lspconfig.nvim")
 
     -- configuring lsp servers
-    use("neovim/nvim-lspconfig") -- easily configure language servers
-    use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-    use({"glepnir/lspsaga.nvim", branch = "main"}) -- enhanced lsp uis
+    use("neovim/nvim-lspconfig")
+    -- for autocompletion
+    use("hrsh7th/cmp-nvim-lsp")
 
     -- formatting & linting
-    use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
-    use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+    use("jose-elias-alvarez/null-ls.nvim")
+    -- bridges gap b/w mason & null-ls
+    use("jayp0521/mason-null-ls.nvim")
 
     -- treesitter configuration
     use({
@@ -104,10 +100,17 @@ return packer.startup(function(use)
     })
 
     -- auto closing
-    use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
-    use({"windwp/nvim-ts-autotag", after = "nvim-treesitter"}) -- autoclose tags
+    use("windwp/nvim-autopairs")
+    -- autoclose tags
+    use({"windwp/nvim-ts-autotag", after = "nvim-treesitter"})
 
+    -- auto save 
     use "Pocco81/auto-save.nvim"
+
+    -- notifations
+
+    -- settion manager
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then require("packer").sync() end

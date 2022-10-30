@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ReplaceWithRegister = {
-    loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ReplaceWithRegister",
-    url = "https://github.com/vim-scripts/ReplaceWithRegister"
-  },
   ["auto-save.nvim"] = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-save.nvim",
@@ -133,11 +128,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
-  },
-  ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim",
-    url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -230,11 +220,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "C:\\Users\\main\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
-    url = "https://github.com/tpope/vim-surround"
   }
 }
 
