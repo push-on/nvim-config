@@ -85,12 +85,18 @@ return packer.startup(function(use)
     use("jayp0521/mason-null-ls.nvim")
 
     -- treesitter configuration
-    use "nvim-treesitter/nvim-treesitter"
+    use({
+        "nvim-treesitter/nvim-treesitter",
+        run = function()
+            require("nvim-treesitter.install").update({with_sync = true})
+        end
+    })
 
     -- auto closing
     use "windwp/nvim-autopairs"
     -- autoclose tags
     use({"windwp/nvim-ts-autotag", after = "nvim-treesitter"})
+
     -- auto save 
     use "Pocco81/auto-save.nvim"
 

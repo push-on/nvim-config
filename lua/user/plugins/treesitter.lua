@@ -1,9 +1,6 @@
 -- import nvim-treesitter plugin safely
 local status, treesitter = pcall(require, "nvim-treesitter.configs")
 if status then
-    run = function()
-        require("nvim-treesitter.install").update({with_sync = true})
-    end
     -- configure treesitter
     treesitter.setup({
         -- enable syntax highlighting
@@ -15,7 +12,7 @@ if status then
         -- ensure these language parsers are installed
         ensure_installed = {
             "json", "javascript", "typescript", "tsx", "yaml", "html", "css",
-            "lua", "vim", "gitignore", "rust"
+            "lua", "vim", "rust"
         },
         -- auto install above language parsers
         auto_install = true
