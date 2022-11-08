@@ -56,7 +56,6 @@ return packer.startup(function(use)
     use "windwp/nvim-autopairs"
     -- auto save 
     use "Pocco81/auto-save.nvim"
-
     -- notifations
 
     -- settion manager
