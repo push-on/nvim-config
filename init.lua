@@ -1,14 +1,14 @@
+require "user.plugins-setup"
 local impatient_ok, impatient = pcall(require, "impatient")
 if impatient_ok then impatient.enable_profile() end
-require "user.plugins-setup"
-require "user.core.options"
-require "user.core.colorscheme"
-require "user.plugins.treesitter"
-require "user.plugins.nvim-tree"
-require "user.plugins.bufferline"
-require "user.plugins.lualine"
-require "user.plugins.lsp"
-require "user.plugins.cmp"
-require "user.plugins.autopairs"
-require "user.core.keymaps"
 
+for _, source in ipairs {
+    "user.core.options", "user.core.colorscheme", "user.plugins.nvim-tree",
+    "user.plugins.bufferline", "user.plugins.lualine", "user.plugins.autopairs",
+    "user.core.keymaps"
+} do
+    local status_ok, fault = pcall(require, source)
+    if not status_ok then
+        vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault)
+    end
+end
