@@ -41,7 +41,6 @@ return packer.startup(function(use)
     use "MunifTanjim/nui.nvim"
     -- Better buffer close
     use "famiu/bufdelete.nvim"
-
     -- tokyonight
     use 'folke/tokyonight.nvim'
     -- icons dependencies
@@ -50,12 +49,23 @@ return packer.startup(function(use)
     use 'nvim-lualine/lualine.nvim'
     -- Bufferline
     use 'akinsho/bufferline.nvim'
-    -- neotree
-    use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
+    -- nvim - tree
+    use "kyazdani42/nvim-tree.lua"
     -- auto closing
     use "windwp/nvim-autopairs"
     -- auto save 
     use "Pocco81/auto-save.nvim"
+    -- treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({
+                with_sync = true
+            })
+            ts_update()
+        end
+    }
+
     -- notifations
 
     -- settion manager

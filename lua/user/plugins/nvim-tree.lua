@@ -1,28 +1,25 @@
-local status_ok, nvim_tree = pcall(require, "neo-tree")
-if status_ok then
-    require("neo-tree").setup({
-        -- popup_border_style = "rounded",
-        enable_git_status = false,
-        enable_diagnostics = false,
-        default_component_configs = {
-            container = {enable_character_fade = false},
-            name = {use_git_status_colors = false}
-        },
-        window = {position = "left", width = 25},
-        filesystem = {
-            filtered_items = {
-                visible = false, -- when true, they will just be displayed differently than normal items
-                hide_dotfiles = false,
-                hide_gitignored = false,
-                hide_hidden = false, -- only works on Windows for hidden files/directories
-                never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
-                    -- ".DS_Store",
-                    -- "thumbs.db",
-                    "desktop.ini"
-                }
+local status_ok, nvim_tree = pcall(require, "nvim-tree")
+if not status_ok then return end
 
+local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
+if not config_status_ok then return end
+
+local tree_cb = nvim_tree_config.nvim_tree_callback
+
+nvim_tree.setup {
+    renderer = {
+        indent_markers = {
+            enable = true,
+            inline_arrows = true,
+            icons = {
+                corner = "└",
+                edge = "│",
+                item = "│",
+                bottom = "─",
+                none = " "
             }
         }
+    },
+    filters = {dotfiles = false, custom = {"desktop.ini"}, exclude = {}}
 
-    })
-end
+}
