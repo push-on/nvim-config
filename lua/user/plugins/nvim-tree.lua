@@ -21,5 +21,4 @@ nvim_tree.setup {
         }
     },
     filters = {dotfiles = false, custom = {"desktop.ini"}, exclude = {}}
-
 }
