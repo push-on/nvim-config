@@ -45,13 +45,10 @@ return packer.startup(function(use)
     use "folke/tokyonight.nvim"
     -- icons dependencies
     use "kyazdani42/nvim-web-devicons"
-
     -- Lua line status bar
     use "nvim-lualine/lualine.nvim"
-    
     -- Bufferline
     use "akinsho/bufferline.nvim"
-    
     -- nvim - tree
     use "kyazdani42/nvim-tree.lua"
     
