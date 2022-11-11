@@ -41,3 +41,4 @@ for _, server in pairs(servers) do
 
     lspconfig[server].setup(opts)
 end
+

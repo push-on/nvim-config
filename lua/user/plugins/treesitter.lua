@@ -17,7 +17,6 @@ treesitter.setup({
         "json", "javascript", "typescript", "tsx", "yaml", "html", "css", "lua",
         "vim", "gitignore", "rust", "help", "c" , "cpp"
     },
-    
     -- auto install above language parsers
     auto_install = true
 })
