@@ -3,7 +3,7 @@ local impatient_ok, impatient = pcall(require, "impatient")
 if impatient_ok then impatient.enable_profile() end
 
 for _, source in ipairs {
-     "user.core.options", "user.plugins-setup", "user.core.colorscheme", 
+    "user.core.options", "user.plugins-setup", "user.core.colorscheme",
     "user.plugins.treesitter", "user.plugins.nvim-tree",
     "user.plugins.bufferline", "user.plugins.lualine", "user.plugins.lsp",
     "user.plugins.cmp", "user.plugins.autopairs", "user.core.keymaps"
@@ -13,3 +13,4 @@ for _, source in ipairs {
         vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault)
     end
 end
+

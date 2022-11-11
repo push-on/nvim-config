@@ -1,6 +1,6 @@
 local servers = {
     "tsserver", "html", "cssls", "tailwindcss", "sumneko_lua", "emmet_ls",
-    "jsonls", "pyright"
+    "jsonls", "pyright", "rust_analyzer"
 }
 
 local settings = {

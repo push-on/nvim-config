@@ -6,8 +6,6 @@
 - 
 
 ## 🪲 Bugs
-- Treesitter > JS, TS, TSX, JX not working properly
-- Treesitter Error > :h :help
 - Crash > reasouns unknown
 
 ## 💔 not working
