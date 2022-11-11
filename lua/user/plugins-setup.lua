@@ -45,16 +45,16 @@ return packer.startup(function(use)
     use "folke/tokyonight.nvim"
     -- icons dependencies
     use "kyazdani42/nvim-web-devicons"
-
     -- Lua line status bar
     use "nvim-lualine/lualine.nvim"
-    
     -- Bufferline
     use "akinsho/bufferline.nvim"
-    
-    -- nvim - tree
-    use "kyazdani42/nvim-tree.lua"
-    
+    -- Neo tree
+    use {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v2.x",
+    }
+
     -- completion plugin
     use "hrsh7th/nvim-cmp"
     -- buffer completions
@@ -71,7 +71,6 @@ return packer.startup(function(use)
     -- useful snippets
     use("rafamadriz/friendly-snippets")
     -- in charge of managing lsp servers, linters & formatters
-
 
     use("williamboman/mason.nvim")
     -- bridges gap b/w mason & lspconfig
@@ -92,7 +91,7 @@ return packer.startup(function(use)
             require("nvim-treesitter.install").update({with_sync = true})
         end
     })
-    
+
     -- auto closing
     use("windwp/nvim-autopairs")
     -- autoclose tags

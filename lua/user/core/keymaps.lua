@@ -17,8 +17,9 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
--- keymap("n", "<leader>n", "<cmd>enew<cr>", opts)
+keymap("n", "<leader>e", "<cmd>Neotree toggle<cr>", opts)
+keymap("n", "<leader>o", "<cmd>Neotree focus<cr>", opts)
+
 keymap("n", "<C-s>", "<cmd>w!<cr>", opts)
 keymap("n", "<C-q>", "<cmd>q!<cr>", opts)
 

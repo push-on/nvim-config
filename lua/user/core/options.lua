@@ -43,9 +43,6 @@ vim.opt.shortmess:append "c"
 
 for k, v in pairs(options) do vim.opt[k] = v end
 
-vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set iskeyword+=-]]
-vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 -- Neovide Settings
 vim.cmd([[
   if exists("g:neovide")
@@ -54,12 +51,4 @@ vim.cmd([[
   let g:neovide_remember_window_size = v:true
   let g:neovide_remember_window_position = v:true
   endif
-]])
-
--- reset cursor after gets out of vim
-vim.cmd([[
-augroup RestoreCursorShapeOnExit
-  autocmd!
-  autocmd VimLeave * set guicursor=a:hor20-blinkwait400-blinkoff400-blinkon400
-augroup END
 ]])

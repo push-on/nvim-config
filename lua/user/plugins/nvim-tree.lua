@@ -1,24 +1,24 @@
-local status_ok, nvim_tree = pcall(require, "nvim-tree")
+local status_ok, neotree = pcall(require, "neo-tree")
 if not status_ok then return end
 
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
-if not config_status_ok then return end
-
-local tree_cb = nvim_tree_config.nvim_tree_callback
-
-nvim_tree.setup {
-    renderer = {
-        indent_markers = {
-            enable = true,
-            inline_arrows = true,
-            icons = {
-                corner = "└",
-                edge = "│",
-                item = "│",
-                bottom = "─",
-                none = " "
-            }
+neotree.setup {
+    close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
+    popup_border_style = "rounded",
+    enable_git_status = false,
+    enable_diagnostics = false,
+    default_component_configs = {
+        name = {
+            trailing_slash = false,
+            use_git_status_colors = true,
         }
     },
-    filters = {dotfiles = false, custom = {"desktop.ini"}, exclude = {}}
+    filesystem = {
+        filtered_items = {
+            visible = false, -- when true, they will just be displayed differently than normal items
+            hide_dotfiles = false,
+            hide_gitignored = false,
+            hide_hidden = false, -- only works on Windows for hidden files/directories
+            never_show = {"desktop.ini"},
+        }
+    }
 }
