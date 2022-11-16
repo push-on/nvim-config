@@ -3,7 +3,6 @@ if not status_ok then return end
 
 neotree.setup {
     close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
-    popup_border_style = "rounded",
     enable_git_status = false,
     enable_diagnostics = false,
     default_component_configs = {
@@ -20,5 +19,8 @@ neotree.setup {
             hide_hidden = false, -- only works on Windows for hidden files/directories
             never_show = {"desktop.ini"},
         }
+    },
+    window = {
+      width = 25,
     }
 }
