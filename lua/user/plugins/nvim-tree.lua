@@ -3,6 +3,7 @@ if not status_ok then return end
 
 neotree.setup {
     close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
+    popup_border_style = "rounded",
     enable_git_status = false,
     enable_diagnostics = false,
     default_component_configs = {
@@ -21,6 +22,7 @@ neotree.setup {
         }
     },
     window = {
+      position = "float",
       width = 25,
     }
 }

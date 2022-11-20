@@ -33,8 +33,8 @@ local options = {
     numberwidth = 4, -- set number column width to 2 {default 4}
     signcolumn = "yes", -- always show the sign column, otherwise it would shift the text each time
     wrap = false, -- display lines as one long line
-    scrolloff = 8, -- is one of my fav
-    sidescrolloff = 8,
+    -- scrolloff = 8, -- is one of my fav
+    -- sidescrolloff = 8,
     -- guifont = "Cascadia code" -- the font used in graphical neovim applications
     guifont = "Cascadia code" -- the font used in graphical neovim applications
 }
@@ -50,5 +50,7 @@ vim.cmd([[
   let g:neovide_confirm_quit = v:false
   let g:neovide_remember_window_size = v:true
   let g:neovide_remember_window_position = v:true
+  let g:neovide_floating_blur_amount_x = 2.0
+  let g:neovide_floating_blur_amount_y = 2.0
   endif
 ]])
