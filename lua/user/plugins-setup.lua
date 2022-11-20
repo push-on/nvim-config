@@ -50,10 +50,7 @@ return packer.startup(function(use)
     -- Bufferline
     use "akinsho/bufferline.nvim"
     -- Neo tree
-    use {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v2.x",
-    }
+    use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
 
     -- completion plugin
     use "hrsh7th/nvim-cmp"
