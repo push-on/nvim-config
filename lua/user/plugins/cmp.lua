@@ -68,7 +68,9 @@ cmp.setup {
         buffer = "[Buffer]",
         path = "[Path]"
       })[entry.source.name]
-      vim_item.abbr = string.sub(vim_item.abbr, 1, 15)
+      -- set max width
+      local max_width = 30
+      vim_item.abbr = string.sub(vim_item.abbr, 1, max_width)
       return vim_item
     end
   }

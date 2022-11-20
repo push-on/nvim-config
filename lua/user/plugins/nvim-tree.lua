@@ -22,7 +22,7 @@ neotree.setup {
         }
     },
     window = {
-      position = "float",
+      position = "left",
       width = 25,
     }
 }
