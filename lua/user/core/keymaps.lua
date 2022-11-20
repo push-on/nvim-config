@@ -22,9 +22,12 @@ keymap("n", "<leader>o", "<cmd>Neotree focus<cr>", opts)
 
 keymap("n", "<C-s>", "<cmd>w!<cr>", opts)
 keymap("n", "<C-q>", "<cmd>q!<cr>", opts)
+-- No Highlight
+keymap("n", "<leader>h", "<cmd>nohlsearch<cr>", opts)
 
 local status_ok, _ = pcall(require, "bufdelete")
 if status_ok then keymap("n", "<leader>c", "<cmd>Bdelete<cr>", opts) end
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -55,3 +58,5 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+

@@ -61,6 +61,7 @@ return packer.startup(function(use)
     -- cmdline completions
     use "hrsh7th/cmp-cmdline"
 
+
     -- snippet engine
     use("L3MON4D3/LuaSnip")
     -- for autocompletion
@@ -99,6 +100,21 @@ return packer.startup(function(use)
     -- notifations
 
     -- settion manager
+
+    -- Color highlighting
+    -- use({
+    --     "NvChad/nvim-colorizer.lua",
+    --     event = on_file_open,
+    --     config = function() require "configs.colorizer" end
+    -- })
+    -- Session manager
+    -- use({
+    --     "Shatur/neovim-session-manager",
+    --     module = "session_manager",
+    --     cmd = "SessionManager",
+    --     event = "BufWritePost",
+    --     config = function() require "configs.session_manager" end
+    -- })
 
     if PACKER_BOOTSTRAP then require("packer").sync() end
 end)
