@@ -54,3 +54,7 @@ vim.cmd([[
   let g:neovide_floating_blur_amount_y = 2.0
   endif
 ]])
+
+if vim.g.neovide == nil then
+  print("this is neovide")
+end

@@ -24,10 +24,10 @@ treesitter.setup({
     autotag = {enable = true},
     -- ensure these language parsers are installed
     ensure_installed = {
-        "json", "javascript", "typescript", "tsx", "css", "lua", "vim",
-        "gitignore", "rust", "help", "c", "cpp", "python"
+        "jsonc","javascript", "typescript", "tsx", "css", "lua", "vim",
+        "gitignore", "rust", "help", "c", "cpp", "python", "svelte"
     },
-    ignore_install = {"yaml", "html"},
+    ignore_install = {"yaml", "html", "jsonc", "json"},
     rainbow = {
         enable = false,
         disable = {"html"},
