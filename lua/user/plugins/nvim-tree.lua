@@ -7,10 +7,7 @@ neotree.setup {
     enable_git_status = false,
     enable_diagnostics = false,
     default_component_configs = {
-        name = {
-            trailing_slash = false,
-            use_git_status_colors = true,
-        }
+        name = {trailing_slash = false, use_git_status_colors = true}
     },
     filesystem = {
         filtered_items = {
@@ -18,11 +15,13 @@ neotree.setup {
             hide_dotfiles = false,
             hide_gitignored = false,
             hide_hidden = false, -- only works on Windows for hidden files/directories
-            never_show = {"desktop.ini"},
+            never_show = {"desktop.ini"}
         }
     },
     window = {
-      position = "right",
-      width = 35,
+        position = "right",
+        width = 35,
+        mappings = {["p"] = {"toggle_preview", config = {use_float = false}}}
     }
+
 }

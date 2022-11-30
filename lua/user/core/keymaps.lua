@@ -26,8 +26,6 @@ keymap("n", "<C-q>", "<cmd>q!<cr>", opts)
 
 -- No Highlight
 keymap("n", "<leader>h", "<cmd>nohlsearch<cr>", opts)
-keymap("n", "<#>", "<Nop>", opts)
-
 
 local status_ok, _ = pcall(require, "bufdelete")
 if status_ok then keymap("n", "<leader>c", "<cmd>Bdelete<cr>", opts) end
