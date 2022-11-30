@@ -17,10 +17,7 @@
 ## 💀 find workarounds
 1. acidental press on # 
 2. don't like $ to go to beginning of line. - liked helix's implimentaion of gh gl to go to end and beginning of line
-
-## 🔌 Plugins install
-1. Emoji support ?
-2.  
+3. 
 
 ## 🖖 Vim commands
 1. incriment / decriment = ctrl + a / x
