@@ -11,27 +11,14 @@
 ## 🪲 Bugs
 
 1. Treesitter - HTML, YAML // Not working
+2. 
+
+## remove Shortcuts.
+1. <#>  
 
 ## 🔌 Plugins install
-
-- lsp saga https://github.com/glepnir/lspsaga.nvim
-
-## Neotree shortcuts
-1. Backspace = go back directory
-2. . = set current root
-3. a = add file / folder
-4. A = add folder
-5. d = delete
-6. r = rename
-7. y = copy
-8. p = paste
-9. c = copy
-10. m = move 
-11. R = refresh
-12. ? = help
-13. < = previous source
-14. > = next source
-
+1. Emoji support ?
+2.  
 ## Vim commands
 1. incriment / decriment = ctrl + a / x
 
