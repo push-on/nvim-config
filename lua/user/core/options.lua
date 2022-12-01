@@ -12,10 +12,10 @@ local options = {
     ignorecase = true, -- ignore case in search patterns
     mouse = "h", -- allow the mouse to be used in neovim
     pumheight = 10, -- pop up menu height
-    showmode = false, -- we don't need to see things like -- INSERT -- anymore
+    showmode = true, -- we don't need to see things like -- INSERT -- anymore
     showtabline = 1, -- always show tabs
     smartcase = true, -- smart case
-    smartindent = false, -- make indenting smarter again
+    smartindent = true, -- make indenting smarter again
     splitbelow = true, -- force all horizontal splits to go below current window
     splitright = true, -- force all vertical splits to go to the right of current window
     swapfile = false, -- creates a swapfile
@@ -33,9 +33,6 @@ local options = {
     numberwidth = 4, -- set number column width to 2 {default 4}
     signcolumn = "yes", -- always show the sign column, otherwise it would shift the text each time
     wrap = false, -- display lines as one long line
-    -- scrolloff = 8, -- is one of my fav
-    -- sidescrolloff = 8,
-    -- guifont = "Cascadia code" -- the font used in graphical neovim applications
     guifont = "Cascadia code" -- the font used in graphical neovim applications
 }
 
