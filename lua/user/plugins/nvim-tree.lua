@@ -19,7 +19,7 @@ neotree.setup {
         }
     },
     window = {
-        position = "right",
+        position = "left",
         width = 35,
         mappings = {["p"] = {"toggle_preview", config = {use_float = false}}}
     }
