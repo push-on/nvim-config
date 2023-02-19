@@ -13,8 +13,8 @@ mason.setup()
 mason_lspconfig.setup({
     -- list of servers for mason to install
     ensure_installed = {
-        "tsserver", "html", "cssls", "tailwindcss", "sumneko_lua", "emmet_ls",
-        "jsonls", "pyright", "rust_analyzer", "clangd"
+        "tsserver", "html", "cssls", "tailwindcss", "lua_ls", "emmet_ls",
+        "jsonls", "pyright", "rust_analyzer"
     },
     ui = {
         icons = {

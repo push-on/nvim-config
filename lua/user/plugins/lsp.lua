@@ -42,7 +42,7 @@ lspconfig["emmet_ls"].setup({
 })
 
 -- configure lua server (with special settings)
-lspconfig["sumneko_lua"].setup({
+lspconfig["lua_ls"].setup({
     capabilities = capabilities,
     on_attach = on_attach,
     settings = { -- custom settings for lua
@@ -64,10 +64,6 @@ lspconfig["tsserver"]
 lspconfig["jsonls"].setup({capabilities = capabilities, on_attach = on_attach})
 lspconfig["pyright"].setup({capabilities = capabilities, on_attach = on_attach})
 lspconfig["rust_analyzer"].setup({
-    capabilities = capabilities,
-    on_attach = on_attach
-})
-lspconfig["clangd"].setup({
     capabilities = capabilities,
     on_attach = on_attach
 })
