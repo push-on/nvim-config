@@ -96,8 +96,6 @@ return packer.startup(function(use)
     use("windwp/nvim-autopairs")
     -- autoclose tags
     use({"windwp/nvim-ts-autotag", after = "nvim-treesitter"})
-    -- auto save
-    use "Pocco81/auto-save.nvim"
 
     -- Commenting
     use {
